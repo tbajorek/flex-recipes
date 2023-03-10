@@ -1,0 +1,4 @@
+api_common:
+  resource: .
+  type: api_common
+  prefix: /api
