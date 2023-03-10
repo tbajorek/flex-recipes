@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "tbajorek/symfony-api-common": {
+            "manifest": {
+                "bundles": {
+                    "ApiCommon\\ApiCommonBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "src/": "%SRC_DIR%/"
+                },
+                "post-install-output": [
+                    "  * You are almost ready to work with API Common library.",
+                    "  * Check README.md file to learn what to do next.",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>https://github.com/tbajorek/symfony-api-common</>"
+                ]
+            },
+            "files": {
+                "config/routes/api_common.yaml": {
+                    "contents": [
+                        "api_common:",
+                        "  resource: .",
+                        "  type: api_common",
+                        "  prefix: /api"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e3ae146133475f908f853d7744999b2699129db8"
+        }
+    }
+}
