@@ -1,4 +1,0 @@
-  * You are almost ready to work with API Common library.
-  * Check README.md file to learn what to do next.
-
-  * <fg=blue>Read</> the documentation at <comment>https://github.com/tbajorek/symfony-api-common</>
